@@ -2,6 +2,7 @@ import './App.css'
 import Ourrecipies from './components/Our-recipes/Ourrecipies'
 import Banner from './components/banner/Banner'
 import Navbar from './components/navbar/Navbar'
+import Recipies from './components/recipies/Recipies'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Ourrecipies></Ourrecipies>
+      <Recipies></Recipies>
     </>
   )
 }
