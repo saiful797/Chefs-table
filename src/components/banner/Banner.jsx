@@ -14,8 +14,8 @@ const Banner = () => {
                             <p className="text-balance">Cooking is both an art and a science, requiring a balance of creativity and precision. It begins with selecting fresh, high-quality ingredients and understanding how to prepare them with finesse. Knife skills are fundamental, enabling efficient and safe chopping, slicing, and dicing. </p>
 
                             <div className="space-x-5">
-                                <button className="btn bg-[#0BE58A] rounded-full text-lg font-semibold border-[#0BE58A]">Explore Now</button>
-                                <button className="btn glass rounded-full text-white">Our Feedback</button>
+                                <button className="btn bg-[#0BE58A] rounded-full text-lg font-bold border-[#0BE58A]">Explore Now</button>
+                                <button className="btn glass rounded-full text-lg font-semibold text-white">Our Feedback</button>
                             </div>
                         </div> 
                     </div>
