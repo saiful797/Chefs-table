@@ -10,7 +10,10 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Ourrecipies></Ourrecipies>
-      <Recipies></Recipies>
+      <div className='flex'>
+          <Recipies></Recipies>
+
+      </div>
     </>
   )
 }

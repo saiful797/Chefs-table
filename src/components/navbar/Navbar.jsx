@@ -16,7 +16,7 @@ export default function Navbar(){
                 <a className="text-4xl font-bold">Recipe Calories</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-xl font-medium">
+                <ul className="menu menu-horizontal px-1">
                     <li><a>Home</a></li>
                     <li><a>Recipes</a></li>
                     <li><a>About</a></li>

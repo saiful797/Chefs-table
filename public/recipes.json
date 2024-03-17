@@ -7,10 +7,11 @@
         "550 g chicken",
         "120 ml soy sauce",
         "200 g basil leaves",
-        "400 g mushrooms"
+        "400 g mushrooms",
+        "50 g chili"
       ],
-      "preparing_time": "30 min",
-      "calories": "320 calories",
+      "preparing_time": "30",
+      "calories": "320",
       "recipe_image": "https://i.ibb.co/K5gWhz7/Chicken-Stir-Fry.jpg"
     },
     {
@@ -22,10 +23,10 @@
         "150 g chickpeas",
         "200 ml coconut milk",
         "100 g spinach",
-        "2 tbsp curry powder"
+        "100 g nut"
       ],
-      "preparing_time": "45 min",
-      "calories": "250 calories",
+      "preparing_time": "45",
+      "calories": "250",
       "recipe_image": "https://i.ibb.co/5KdBtss/Vegetable-Curry.jpg"
     },
     {
@@ -34,15 +35,14 @@
       "short_description": "A vibrant pasta dish with fresh spring vegetables and a creamy sauce.",
       "ingredients": [
         "400 g pasta",
-        "1 bell pepper",
-        "1 zucchini",
         "100 g cherry tomatoes",
         "100 g broccoli",
-        "200 ml cream"
+        "200 ml cream",
+        "50 g chili"
       ],
-      "preparing_time": "25 min",
-      "calories": "350 calories",
-      "recipe_image": "https://i.ibb.co/ZLqSxMn/Pasta-Primavera.jpg"
+      "preparing_time": "25",
+      "calories": "350",
+      "recipe_image": "https://i.ibb.co/3BKSq7H/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg"
     },
     {
       "recipe_id": 4,
@@ -52,10 +52,11 @@
         "4 salmon fillets",
         "100 ml teriyaki sauce",
         "2 tbsp honey",
-        "1 tbsp sesame seeds"
+        "1 tbsp sesame seeds",
+        "Food Oil"
       ],
-      "preparing_time": "20 min",
-      "calories": "280 calories",
+      "preparing_time": "20",
+      "calories": "280",
       "recipe_image": "https://i.ibb.co/VLKbCds/Salmon-Teriyaki.jpg"
     },
     {
@@ -64,12 +65,13 @@
       "short_description": "A classic Italian salad featuring fresh tomatoes, mozzarella, and basil.",
       "ingredients": [
         "4 tomatoes",
+        "100 g potato",
         "200 g mozzarella cheese",
         "100 g fresh basil leaves",
         "2 tbsp balsamic glaze"
       ],
-      "preparing_time": "15 min",
-      "calories": "180 calories",
+      "preparing_time": "15",
+      "calories": "180",
       "recipe_image": "https://i.ibb.co/pfbPMMC/Caprese-Salad.jpg"
     },
     {
@@ -81,11 +83,10 @@
         "200 g all-purpose flour",
         "100 g sugar",
         "1 tsp baking powder",
-        "1/2 tsp cinnamon",
         "2 eggs"
       ],
-      "preparing_time": "60 min",
-      "calories": "200 calories",
+      "preparing_time": "60",
+      "calories": "200",
       "recipe_image": "https://i.ibb.co/cCYRDDx/Banana-Bread.jpg"
     }
 ]
