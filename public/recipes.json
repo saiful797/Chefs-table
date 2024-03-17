@@ -1,6 +1,6 @@
 [
     {
-      "recipe_id": 1,
+      "id": 1,
       "recipe_name": "Chicken Stir-Fry",
       "short_description": "A flavorful and easy-to-make chicken stir-fry with basil and mushrooms.",
       "ingredients": [
@@ -15,7 +15,7 @@
       "recipe_image": "https://i.ibb.co/K5gWhz7/Chicken-Stir-Fry.jpg"
     },
     {
-      "recipe_id": 2,
+      "id": 2,
       "recipe_name": "Vegetable Curry",
       "short_description": "A hearty vegetable curry packed with spices and flavors.",
       "ingredients": [
@@ -30,7 +30,7 @@
       "recipe_image": "https://i.ibb.co/5KdBtss/Vegetable-Curry.jpg"
     },
     {
-      "recipe_id": 3,
+      "id": 3,
       "recipe_name": "Pasta Primavera",
       "short_description": "A vibrant pasta dish with fresh spring vegetables and a creamy sauce.",
       "ingredients": [
@@ -45,7 +45,7 @@
       "recipe_image": "https://i.ibb.co/3BKSq7H/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg"
     },
     {
-      "recipe_id": 4,
+      "id": 4,
       "recipe_name": "Salmon Teriyaki",
       "short_description": "Delicious grilled salmon glazed with homemade teriyaki sauce.",
       "ingredients": [
@@ -60,7 +60,7 @@
       "recipe_image": "https://i.ibb.co/VLKbCds/Salmon-Teriyaki.jpg"
     },
     {
-      "recipe_id": 5,
+      "id": 5,
       "recipe_name": "Caprese Salad",
       "short_description": "A classic Italian salad featuring fresh tomatoes, mozzarella, and basil.",
       "ingredients": [
@@ -75,7 +75,7 @@
       "recipe_image": "https://i.ibb.co/pfbPMMC/Caprese-Salad.jpg"
     },
     {
-      "recipe_id": 6,
+      "id": 6,
       "recipe_name": "Banana Bread",
       "short_description": "Moist and delicious banana bread perfect for breakfast or snacking.",
       "ingredients": [

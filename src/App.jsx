@@ -11,14 +11,19 @@ function App() {
   const [currentlyCoking, setCurrentlyCooking] = useState([])
 
   const handleRecipeCards = (cookCard) => {
+    
     const newCookCards =[...cook, cookCard];
     setCook(newCookCards);
   }
 
-  const handleCurrentlyCookingItems = (cookingItems) => {
+  const handleCurrentlyCookingItems = (id,cookingItems) => {
     const currentlyCookingItem = [...currentlyCoking, cookingItems];
     setCurrentlyCooking(currentlyCookingItem);
+
+    const remainingCookCard = cook.filter(cookCard => cookCard.id !== id );
+    setCook(remainingCookCard);
   }
+
   return (
     <>
       <Navbar></Navbar>
