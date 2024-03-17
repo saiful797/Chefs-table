@@ -10,7 +10,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Ourrecipies></Ourrecipies>
-      <div>
+      <div className='flex mt-10'>
         <Recipes></Recipes>
       </div>
       

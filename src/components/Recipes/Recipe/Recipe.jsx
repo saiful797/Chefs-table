@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Recipe = ({recipe}) => {
     const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories} = recipe;
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 shadow-xl m-5">
             <figure className="px-10 pt-10">
                 <img src={recipe_image} alt="Shoes" className="rounded-xl h-56 w-80" />
             </figure>
@@ -32,8 +32,8 @@ const Recipe = ({recipe}) => {
                     </div>
                 </div>
                 <hr></hr>
-                <div className="card-actions">
-                <button className="btn btn-primary">Buy Now</button>
+                <div className="ml-24">
+                <button className="btn bg-[#0BE58A] rounded-full">Want to Cook</button>
                 </div>
             </div>
         </div>
