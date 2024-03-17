@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import Wanttocook from '../WantToCook/Wanttocook';
+import CurrentlyCooking from '../currentlycooking/CurrentlyCooking'
 
-const Sidebar = ({cook,handleCurrentlyCookingItems}) => {
-    console.log(cook);
+
+const Sidebar = ({currentlyCoking,cook,handleCurrentlyCookingItems}) => {
     return (
-        <div className="w-[400px] md:w-[700px] lg:w-[500px] h-3/4 mb-10 md:ml-24 lg:m-2 bg-white pt-5 pb-5 rounded-lg mt-2 shadow-sm shadow-black text-center">
+        <div className="w-[400px] md:w-[700px] lg:w-[500px] h-3/4 mb-10 md:ml-24 lg:m-2 bg-white pt-5 pb-5 rounded-lg mt-2 shadow-sm shadow-black text-center ml-2">
             <div className="text-center">
                 <h1 className="text-xl font-medium">Want to cook: {cook.length}</h1>
                 <hr></hr>
@@ -20,33 +21,44 @@ const Sidebar = ({cook,handleCurrentlyCookingItems}) => {
                         cook.map((cookCard,idx) => 
                         <Wanttocook 
 
-                        key={cookCard.recipe_id} 
+                        key={idx} 
                         cookCard={cookCard} 
                         idx={idx} 
                         handleCurrentlyCookingItems={handleCurrentlyCookingItems}>
 
-                        </Wanttocook> )
+                        </Wanttocook>)
                     }
                 </div>
                 <hr></hr>
-                <div>
-                    <p></p>
-                </div>
             </div>
-            
             <hr></hr>
 
             <div className="text-center mt-5">
-                <h1 className="text-xl font-medium">Currently cooking: 0</h1>
+            <h1 className="text-xl font-medium">Currently cooking: {currentlyCoking.length}</h1>
                 <hr></hr>
                 <hr></hr>
-                <div className="flex gap-16">
-                    <p className='pl-12'>Name</p>
+                <div className="flex gap-28">
+                    <p className='pl-24'>Name</p>
                     <p>Time</p>
                     <p>Calories</p>
                 </div>
                 <hr></hr>
+                <div className='space-y-2'>
+                    {
+                        currentlyCoking.map((cookingItem,idx)=> <CurrentlyCooking key={idx} idx={idx} cookingItem={cookingItem}></CurrentlyCooking>)
+                    } 
+                </div>
                 <hr></hr>
+                <div className='flex justify-end items-center gap-10 mt-5 bg-green-100 p-5'>
+                    <div>
+                        <p>Total Time=</p>
+                        <p>minutes</p>
+                    </div>
+                    <div>
+                        <p>Total Calories=</p>
+                        <p>calories</p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -55,6 +67,10 @@ const Sidebar = ({cook,handleCurrentlyCookingItems}) => {
 
 Sidebar.propTypes ={
     cook: PropTypes.object.isRequired,
-    handleCurrentlyCookingItems: PropTypes.func
+    handleCurrentlyCookingItems: PropTypes.func,
+    currentlyCoking: PropTypes.object.isRequired,
+    time: PropTypes.number.isRequired,
+    calories: PropTypes.number.isRequired
+
 }
 export default Sidebar;

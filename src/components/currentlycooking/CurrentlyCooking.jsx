@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 
-const Wanttocook = ({idx, cookCard,handleCurrentlyCookingItems}) => {
-    const {recipe_name,preparing_time,calories} = cookCard;
+const CurrentlyCooking = ({cookingItem,idx}) => {
+    const {recipe_name,preparing_time,calories}= cookingItem;
     return (
         <div className='flex gap-3 bg-slate-50 justify-between p-2 rounded-xl w-auto'>
             <p>{idx+1}</p>
@@ -15,14 +15,11 @@ const Wanttocook = ({idx, cookCard,handleCurrentlyCookingItems}) => {
             <div>
             <p>{calories} calories</p>
             </div>
-            <button onClick={() => handleCurrentlyCookingItems(cookCard)} className='btn bg-[#0BE58A] rounded-full text-sm'>Preparing</button>
         </div>
     );
 };
-
-Wanttocook.propTypes ={
-    cookCard: PropTypes.object.isRequired,
+CurrentlyCooking.propTypes ={
+    cookingItem: PropTypes.object.isRequired,
     idx: PropTypes.number.isRequired,
-    handleCurrentlyCookingItems: PropTypes.func
 }
-export default Wanttocook;
+export default CurrentlyCooking;

@@ -15,8 +15,9 @@ function App() {
     setCook(newCookCards);
   }
 
-  const handleCurrentlyCookingItems = () => {
-    console.log('Process was Done!');
+  const handleCurrentlyCookingItems = (cookingItems) => {
+    const currentlyCookingItem = [...currentlyCoking, cookingItems];
+    setCurrentlyCooking(currentlyCookingItem);
   }
   return (
     <>
@@ -25,7 +26,7 @@ function App() {
       <Ourrecipies></Ourrecipies>
       <div className='flex-col-1  lg:flex justify-between mt-10 space-y-5'>
         <Recipes handleRecipeCards={handleRecipeCards}></Recipes>
-        <Sidebar cook = {cook} handleCurrentlyCookingItems={handleCurrentlyCookingItems}></Sidebar>
+        <Sidebar currentlyCoking={currentlyCoking} cook = {cook} handleCurrentlyCookingItems={handleCurrentlyCookingItems}></Sidebar>
       </div>
       
     </>
