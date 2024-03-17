@@ -8,20 +8,24 @@ import Navbar from './components/navbar/Navbar'
 
 function App() {
   const [cook, setCook] = useState([])
+  const [currentlyCoking, setCurrentlyCooking] = useState([])
 
   const handleRecipeCards = (cookCard) => {
     const newCookCards =[...cook, cookCard];
     setCook(newCookCards);
   }
 
+  const handleCurrentlyCookingItems = () => {
+    console.log('Process was Done!');
+  }
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
       <Ourrecipies></Ourrecipies>
-      <div className='flex-col-1 lg:flex justify-between mt-10 space-y-5'>
+      <div className='flex-col-1  lg:flex justify-between mt-10 space-y-5'>
         <Recipes handleRecipeCards={handleRecipeCards}></Recipes>
-        <Sidebar cook = {cook}></Sidebar>
+        <Sidebar cook = {cook} handleCurrentlyCookingItems={handleCurrentlyCookingItems}></Sidebar>
       </div>
       
     </>
