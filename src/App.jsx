@@ -19,7 +19,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Ourrecipies></Ourrecipies>
-      <div className='flex justify-between mt-10'>
+      <div className='flex-col-1 lg:flex justify-between mt-10 space-y-5'>
         <Recipes handleRecipeCards={handleRecipeCards}></Recipes>
         <Sidebar cook = {cook}></Sidebar>
       </div>
