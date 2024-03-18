@@ -14,7 +14,7 @@ const Recipe = ({recipe, handleRecipeCards}) => {
                 <hr></hr>
                 <ul>
                     {
-                        ingredients.map(item => <li key={item}><span className='text-xl font-bold'>. </span>{item}</li>)
+                        ingredients.map(item => <li key = {item}><span className='text-xl font-bold'>. </span>{item}</li>)
                     }
                 </ul>
                 <hr></hr>

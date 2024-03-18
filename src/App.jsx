@@ -11,9 +11,12 @@ function App() {
   const [currentlyCoking, setCurrentlyCooking] = useState([])
 
   const handleRecipeCards = (cookCard) => {
-    
-    const newCookCards =[...cook, cookCard];
-    setCook(newCookCards);
+    const isExist = cook.find(item => item.id === cookCard.id);
+    if(!isExist){
+       const newCookCards =[...cook, cookCard];
+       setCook(newCookCards);
+    }
+    else alert('Item Already Exist!');
   }
 
   const handleCurrentlyCookingItems = (id,cookingItems) => {

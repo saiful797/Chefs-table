@@ -50,13 +50,15 @@ const Sidebar = ({currentlyCoking,cook,handleCurrentlyCookingItems}) => {
                 </div>
                 <hr></hr>
                 <div className='flex justify-end items-center gap-10 mt-5 bg-green-100 p-5'>
+                
                     <div>
                         <p>Total Time=</p>
-                        <p>minutes</p>
+                        <p>{0} minutes</p>
                     </div>
+                
                     <div>
                         <p>Total Calories=</p>
-                        <p>calories</p>
+                        <p>{0} calories</p>
                     </div>
                 </div>
             </div>

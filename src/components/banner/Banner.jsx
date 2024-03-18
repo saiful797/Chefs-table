@@ -11,7 +11,7 @@ const Banner = () => {
                                 <h1>Discover an exceptional cooking</h1>
                                 <p>class tailored for you!</p>
                             </div>
-                            <p className="text-balance text-sm md:text-base">Cooking is both an art and a science, requiring a balance of creativity and precision. It begins with selecting fresh, high-quality ingredients and understanding how to prepare them with finesse. Knife skills are fundamental, enabling efficient and safe chopping, slicing, and dicing. </p>
+                            <p className="text-balance text-sm md:text-base">Cooking is both an art and a science, requiring a balance of creativity and precision. It begins with selecting fresh, high-quality ingredients and understanding how to prepare them with finesse. Knife skills are fundamental, enabling efficient and safe chopping, slicing, and dicing.</p>
 
                             <div className="space-x-5 flex justify-center items-center">
                                 <button className="btn bg-[#0BE58A] rounded-full text-lg font-bold border-[#0BE58A]">Explore Now</button>

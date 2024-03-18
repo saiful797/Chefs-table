@@ -15,7 +15,10 @@ const Recipes = ({handleRecipeCards}) => {
     return (
         <div className="grid lg:grid-cols-2 space-y-5 lg:space-y-2">
             {
-                recipes.map(recipe => <Recipe key={recipe.recipe_id} handleRecipeCards={handleRecipeCards} recipe={recipe}></Recipe>)
+                recipes.map(recipe => <Recipe 
+                    key={recipe.recipe_id} 
+                    handleRecipeCards={handleRecipeCards} 
+                    recipe={recipe}></Recipe>)
             }
         </div>
     );
